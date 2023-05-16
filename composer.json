@@ -1,0 +1,43 @@
+{
+    "name": "rnr1721/le7-db-redbean",
+    "description": "Redbean PHP that allow easy use of this ORM in any PHP project",
+    "keywords": ["le7", "le7-framework", "framework", "redbean", "database", "component"],
+    "authors": [
+        {
+            "name": "Eugeny G",
+            "email": "rnr1721@gmail.com",
+            "homepage": "https://xhamster.biz.ua",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Core\\Database\\Redbean\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestsModel\\": "tests/TestsModel"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "gabordemooij/redbean": "^5.7",
+        "rnr1721/le7-entify": "^1.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.7",
+        "phpunit/phpunit": "^10.0"
+    },
+    "scripts": {
+        "test": [
+            "@phpunit",
+            "@psalm"
+        ],
+        "phpunit": "phpunit",
+        "psalm": "psalm"
+    }
+}
