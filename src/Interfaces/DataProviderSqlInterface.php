@@ -6,6 +6,10 @@ namespace Core\Database\Redbean\Interfaces;
 
 use Core\Entify\DataProvider\Interfaces\DataProviderPaginatedInterface;
 
+/**
+ * DataProvider for RedbeanPHP SQL. It similar to Form and Array
+ * data providers of Entity framework
+ */
 interface DataProviderSqlInterface extends DataProviderPaginatedInterface
 {
 

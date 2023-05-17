@@ -20,6 +20,7 @@ All dependencies installs automatic by composer
 - Pagination using Entify entity framework
 - Validation using rules (using Entify entity framework)
 - use arrow RedbeanPHP method calls instead static methods
+- Contain very simple lightweight SQL query builder
 
 ## Installation
 
@@ -177,7 +178,7 @@ use Core\Entify\Entification;
 use Core\Entify\RulesLoaderClass;
 use Core\Database\Redbean\Drivers\DbSql;
 
-$loader = new RulesLoaderClass('\\TestsModel\\');
+$loader = new RulesLoaderClass('\\Model\\');
 
 $entification = new Entification($loader);
 
@@ -233,4 +234,20 @@ About this knows all, but for same, I strongly recommend use bindings instead di
 $entity = $provider->select()->from()->where('id = 1')->getEntity();
 $data = $entity->export(); // Get data as array
 $info = $entity->getInfo(); // Empty pagination data and rules info
+```
+
+## Connection
+
+You can easy add databases, and manage connections. Example:
+
+```php
+// We have already created $db, see above
+
+// Switch to another (in this case Sqlite) database
+$driver = new DbSqlite(['path'=>'./db.sqlite']);
+$db->getConntection()->switchDatabase($driver,'mydb2');
+// Get connection status (after use it), bool
+$status = $db->getConnection()->isConnected();
+// Disconnect from Db
+$db->getConnection()->disconnect();
 ```

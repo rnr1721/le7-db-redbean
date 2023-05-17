@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Core\Database\Redbean\Interfaces;
 
+/**
+ * Simple query builder for SELECT queries
+ */
 interface QueryBuilderInterface
 {
 

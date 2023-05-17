@@ -4,3 +4,5 @@
 /.phpunit.result.cache
 /.phpunit.cache
 /tests/db.sqlite
+/phpDocumentor.phar
+/.phpdoc/

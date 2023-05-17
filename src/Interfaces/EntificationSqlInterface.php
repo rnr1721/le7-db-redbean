@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Core\Database\Redbean\Interfaces;
 
+/**
+ * This is default factory for SQL data provider.
+ * All ready-to-use data provider objects be default create in this factory
+ */
 interface EntificationSqlInterface
 {
 

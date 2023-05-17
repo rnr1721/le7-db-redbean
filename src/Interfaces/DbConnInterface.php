@@ -6,6 +6,11 @@ namespace Core\Database\Redbean\Interfaces;
 
 use Core\Database\Redbean\RedbeanDriverAbstract;
 
+/**
+ * Database connection object. It is wrapper of RedbeanPHP connection
+ * methods. It can switch database, connect, disconnect or indicate
+ * connection status. This object used by DbInterface as dependency
+ */
 interface DbConnInterface
 {
 
