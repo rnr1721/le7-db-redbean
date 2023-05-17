@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Core\Database\Redbean\Drivers;
 
+use Core\Database\Redbean\Interfaces\DbDriverInterface;
 use Core\Database\Redbean\RedbeanDriverAbstract;
 use \RuntimeException;
 
-class DbSql extends RedbeanDriverAbstract
+class DbSql extends RedbeanDriverAbstract implements DbDriverInterface
 {
 
     protected ?string $port = null;

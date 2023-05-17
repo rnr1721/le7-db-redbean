@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Core\Database\Redbean;
 
 use RedBeanPHP\R;
-use Core\Entify\Interfaces\EntificationInterface;
 use RedBeanPHP\TypedModel;
+use Core\Entify\Interfaces\EntificationInterface;
 use \RuntimeException;
 use \InvalidArgumentException;
 use function basename,

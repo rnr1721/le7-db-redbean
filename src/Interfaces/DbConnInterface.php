@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Core\Database\Redbean\Interfaces;
 
-use Core\Database\Redbean\RedbeanDriverAbstract;
+use Core\Database\Redbean\Interfaces\DbDriverInterface;
 
 /**
  * Database connection object. It is wrapper of RedbeanPHP connection
@@ -16,13 +16,13 @@ interface DbConnInterface
 
     /**
      * Switch to database and make it active
-     * @param RedbeanDriverAbstract $driver Instance of DbSql ot SbSqlite
+     * @param DbDriverInterface $driver Instance of DbSql ot SbSqlite
      * @param string $key Db key
      * @param bool|null $frozen Frozen (see Redbean documentation)
      * @return void
      */
     public function switchDatabase(
-            RedbeanDriverAbstract $driver,
+            DbDriverInterface $driver,
             string $key = 'default',
             ?bool $frozen = null
     ): void;

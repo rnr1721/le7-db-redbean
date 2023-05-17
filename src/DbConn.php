@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Core\Database\Redbean;
 
+use Core\Database\Redbean\Interfaces\DbDriverInterface;
 use Core\Database\Redbean\Interfaces\DbConnInterface;
 use Core\Entify\Interfaces\EntificationInterface;
 use RedBeanPHP\R;
@@ -22,7 +23,7 @@ class DbConn implements DbConnInterface
     protected EntificationInterface $entification;
 
     public function __construct(
-            RedbeanDriverAbstract $driver,
+            DbDriverInterface $driver,
             EntificationInterface $entification
     )
     {
@@ -34,7 +35,7 @@ class DbConn implements DbConnInterface
      * @inheritdoc
      */
     public function switchDatabase(
-            RedbeanDriverAbstract $driver,
+            DbDriverInterface $driver,
             string $key = 'default',
             ?bool $frozen = null
     ): void
