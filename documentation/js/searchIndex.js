@@ -776,6 +776,41 @@ Search.appendIndex(
             "summary": "Pagination\u0020options\u0020if\u0020you\u0020will\u0020paginate",
             "url": "classes/Core-Database-Redbean-SqlDataProvider.html#property_pagination"
         },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface",
+            "name": "DbDriverInterface",
+            "summary": "Database\u0020configuration\u0020object.",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html"
+        },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface\u003A\u003AgetFrozen\u0028\u0029",
+            "name": "getFrozen",
+            "summary": "Get\u0020is\u0020DB\u0020frozen\u0020from\u0020driver\u0020config",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html#method_getFrozen"
+        },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface\u003A\u003AgetErrorIfModelNotExists\u0028\u0029",
+            "name": "getErrorIfModelNotExists",
+            "summary": "If\u0020model\u0020class\u0020not\u0020exists,\u0020throw\u0020RuntimeException",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html#method_getErrorIfModelNotExists"
+        },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface\u003A\u003AgetNamespace\u0028\u0029",
+            "name": "getNamespace",
+            "summary": "Get\u0020namespace\u0020for\u0020models",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html#method_getNamespace"
+        },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Get\u0020driver\u0020name",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html#method_getName"
+        },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface\u003A\u003Aexport\u0028\u0029",
+            "name": "export",
+            "summary": "Export\u0020configuration\u0020as\u0020array",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html#method_export"
+        },                {
+            "fqsen": "\\Core\\Database\\Redbean\\Interfaces\\DbDriverInterface\u003A\u003AgetString\u0028\u0029",
+            "name": "getString",
+            "summary": "Get\u0020connection\u0020string",
+            "url": "classes/Core-Database-Redbean-Interfaces-DbDriverInterface.html#method_getString"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
