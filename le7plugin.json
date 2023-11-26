@@ -1,0 +1,9 @@
+{
+    "description": "Plugin that integrate RedbeanPHP ORM in Le7 PHP MVC framework",
+    "update_description": "will be created config and container item if not exists",
+    "run": "init.php",
+    "copy": {
+        "dist/db_redbean.php": "config/db_redbean.php",
+        "dist/dbRedbeanContainerConf.php": "container/dbRedbeanContainerConf.php"
+    }
+}

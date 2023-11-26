@@ -125,7 +125,7 @@ class DbSql extends RedbeanDriverAbstract implements DbDriverInterface
         $host = $this->host;
         $name = $this->name;
 
-        $port = ';port=' . $this->port ?? '';
+        $port = ';port=' . $this->port;
 
         return "$drv:host=$host;dbname=$name" . $port;
     }
