@@ -4,6 +4,6 @@
     "run": "init.php",
     "copy": {
         "dist/db_redbean.php": "config/db_redbean.php",
-        "dist/dbRedbeanContainerConf.php": "container/dbRedbeanContainerConf.php"
+        "dist/dbRedbeanConf.php": "container/dbRedbeanConf.php"
     }
 }
