@@ -2,7 +2,7 @@
 
 $conflictFiles = [
     'config/db_doctrine.php',
-    'container/dbDoctrineContainerConf.php'
+    'container/dbDoctrineConf.php'
 ];
 
 foreach ($conflictFiles as $conflictFile) {
