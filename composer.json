@@ -32,7 +32,7 @@
         "vimeo/psalm": "^5.7",
         "phpunit/phpunit": "^10.0"
     },
-    "conflict": {
+    "replace": {
         "rnr1721/le7-db-doctrine": "*"
     },
     "scripts": {
